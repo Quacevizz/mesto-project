@@ -1,0 +1,19 @@
+.line__popup {
+  opacity: 0.2;
+  border: 1px solid #000000;
+  margin: 0;
+}
+
+.line__popup:last-of-type {
+  margin-bottom: 48px;
+}
+
+@media screen and (max-width: 1279px) {
+  .line__popup {
+    min-width: 238px;
+  }
+
+  .line__popup:last-of-type {
+    margin-bottom: 45px;
+  }
+}

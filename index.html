@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mesto</title>
+    <link rel="stylesheet" href="./pages/index.css" />
+  </head>
+  <body class="root">
+    <div class="page">
+      <header class="header page__header">
+        <img
+          class="logo header__logo"
+          src="./images/logo-header.svg"
+          alt="Место"
+        />
+        <div class="line line__header"></div>
+      </header>
+      <main>
+        <section class="profile page__profile">
+          <div class="avatar profile__avatar"></div>
+          <div class="profile__info">
+            <div class="profile__wrap">
+              <h1 class="profile__title">Жак-Ив Кусто</h1>
+              <button class="edit-button"></button>
+            </div>
+            <p class="profile__subtitle">Исследователь океана</p>
+          </div>
+          <button class="add-button"></button>
+        </section>
+        <section class="elements">
+          <div class="card">
+            <img class="card__image" src="./images/Домбай.png" alt="Домбай" />
+            <div class="card__figcaption">
+              <h2 class="card__title">Домбай</h2>
+              <button class="card__card-button"></button>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              class="card__image"
+              src="./images/Карачаевск.png"
+              alt="Карачаевск"
+            />
+            <div class="card__figcaption">
+              <h2 class="card__title">Карачаевск</h2>
+              <button class="card__card-button"></button>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card__image" src="./images/Эльбрус.png" alt="Эльбрус" />
+            <div class="card__figcaption">
+              <h2 class="card__title">Эльбрус</h2>
+              <button class="card__card-button"></button>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              class="card__image"
+              src="./images/Карачаевск.png"
+              alt="Карачаевск"
+            />
+            <div class="card__figcaption">
+              <h2 class="card__title">Карачаевск</h2>
+              <button class="card__card-button"></button>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card__image" src="./images/Домбай.png" alt="Домбай" />
+            <div class="card__figcaption">
+              <h2 class="card__title">Домбай</h2>
+              <button class="card__card-button"></button>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card__image" src="./images/Эльбрус.png" alt="Эльбрус" />
+            <div class="card__figcaption">
+              <h2 class="card__title">Эльбрус</h2>
+              <button class="card__card-button"></button>
+            </div>
+          </div>
+        </section>
+        <footer class="footer">
+          <p class="footer__signature">&#169;2022 Mesto Russia</p>
+        </footer>
+        <section class="popup">
+          <button class="popup__close"></button>
+          <form class="popup__container">
+            <div class="popup__form">
+              <h2 class="popup__title">Редактировать профиль</h2>
+              <input
+                class="field field_name"
+                type="text"
+                placeholder="Имя"
+                value="Жак-Ив Кусто"
+              />
+              <div class="line line__popup"></div>
+              <input
+                class="field field_description"
+                type="text"
+                placeholder="О себе"
+                value="Исследователь океана"
+              />
+              <div class="line line__popup"></div>
+              <button class="popup__save" type="submit">Сохранить</button>
+            </div>
+          </form>
+        </section>
+      </main>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

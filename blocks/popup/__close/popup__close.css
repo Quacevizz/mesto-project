@@ -1,0 +1,26 @@
+.popup__close {
+  min-width: 32px;
+  aspect-ratio: 1/1;
+  position: relative;
+  top: -180px;
+  background-image: url(/images/Close\ Icon.png);
+  background-position: center;
+  background-color: transparent;
+  border: none;
+  opacity: 1;
+  transition: opacity 1s ease;
+}
+
+.popup__close:hover {
+  opacity: 0.6;
+}
+
+@media screen and (max-width: 1279px) {
+  .popup__close {
+    min-width: 20px;
+    aspect-ratio: 1/1;
+    right: 20px;
+    bottom: 19px;
+    background-image: url(/images/Close\ Icon\ small.png);
+  }
+}
