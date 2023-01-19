@@ -7,7 +7,7 @@
   margin: auto;
   margin-right: 0;
   background-color: #000000;
-  background-image: url(/images/add-button.png);
+  background-image: url(../../images/add-button.png);
   background-repeat: no-repeat;
   background-position: center;
   opacity: 1;
@@ -23,6 +23,6 @@
     max-width: 282px;
     min-height: 50px;
     margin-left: 19px;
-    background-image: url(/images/add-button\ small.png);
+    background-image: url(../../images/add-button\ small.png);
   }
 }

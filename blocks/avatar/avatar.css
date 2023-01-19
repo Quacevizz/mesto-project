@@ -1,5 +1,5 @@
 .avatar {
-  background-image: url(/images/avatar.jpg);
+  background-image: url(../../images/avatar.jpg);
   min-width: 120px;
   max-height: 120px;
   background-repeat: no-repeat;

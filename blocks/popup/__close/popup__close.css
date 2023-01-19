@@ -3,7 +3,7 @@
   aspect-ratio: 1/1;
   position: relative;
   top: -180px;
-  background-image: url(/images/Close\ Icon.png);
+  background-image: url(../../../images/Close\ Icon.png);
   background-position: center;
   background-color: transparent;
   border: none;
@@ -21,6 +21,6 @@
     aspect-ratio: 1/1;
     right: 20px;
     bottom: 19px;
-    background-image: url(/images/Close\ Icon\ small.png);
+    background-image: url(../../../images/Close\ Icon\ small.png);
   }
 }

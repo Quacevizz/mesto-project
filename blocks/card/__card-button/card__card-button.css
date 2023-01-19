@@ -4,7 +4,7 @@
   box-sizing: border-box;
   align-self: center;
   margin-right: 20px;
-  background-image: url(/images/like-button.svg);
+  background-image: url(../../../images/like-button.svg);
   background-position: center;
   background-color: transparent;
   border: none;
@@ -17,5 +17,5 @@
 }
 
 .card__card-button:active {
-  background-image: url(/images/like-black.png);
+  background-image: url(../../../images/like-black.png);
 }
