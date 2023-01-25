@@ -16,6 +16,3 @@
   opacity: 0.5;
 }
 
-.card__card-button:active {
-  background-image: url(../../../images/like-black.png);
-}

@@ -3,18 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mesto</title>
+    <title>Место</title>
     <link rel="stylesheet" href="./pages/index.css" />
   </head>
-  <body class="root">
-    <div class="page">
+  <body class="root page">
       <header class="header page__header">
         <img
           class="logo header__logo"
           src="./images/logo-header.svg"
           alt="Место"
         />
-        <div class="line header__line"></div>
       </header>
       <main>
         <section class="profile page__profile">
@@ -22,21 +20,21 @@
           <div class="profile__info">
             <div class="profile__wrap">
               <h1 class="profile__title">Жак-Ив Кусто</h1>
-              <button class="edit-button"></button>
+              <button class="profile__edit-button" type="button"></button>
             </div>
             <p class="profile__subtitle">Исследователь океана</p>
           </div>
-          <button class="add-button"></button>
+          <button class="profile__add-button" type="button"></button>
         </section>
         <section class="elements">
           <div class="card">
             <img class="card__image" src="./images/Домбай.png" alt="Домбай" />
             <div class="card__figcaption">
               <h2 class="card__title">Домбай</h2>
-              <button class="card__card-button"></button>
+              <button class="card__card-button card__card-button_active" type="button"></button>
             </div>
           </div>
-          <div class="card">
+          <article class="card">
             <img
               class="card__image"
               src="./images/Карачаевск.png"
@@ -44,70 +42,69 @@
             />
             <div class="card__figcaption">
               <h2 class="card__title">Карачаевск</h2>
-              <button class="card__card-button"></button>
+              <button class="card__card-button card__card-button_active" type="button"></button>
             </div>
-          </div>
-          <div class="card">
+          </article>
+          <article class="card">
             <img class="card__image" src="./images/Эльбрус.png" alt="Эльбрус" />
             <div class="card__figcaption">
               <h2 class="card__title">Эльбрус</h2>
-              <button class="card__card-button"></button>
+              <button class="card__card-button card__card-button_active" type="button"></button>
             </div>
-          </div>
-          <div class="card">
+          </article>
+          <article class="card">
             <img
               class="card__image"
-              src="./images/Карачаевск.png"
-              alt="Карачаевск"
+              src="./images/СПБ.jpg"
+              alt="Санкт-Петербург"
             />
             <div class="card__figcaption">
-              <h2 class="card__title">Карачаевск</h2>
-              <button class="card__card-button"></button>
+              <h2 class="card__title">Санкт-Петербург</h2>
+              <button class="card__card-button card__card-button_active" type="button"></button>
             </div>
-          </div>
-          <div class="card">
-            <img class="card__image" src="./images/Домбай.png" alt="Домбай" />
+          </article>
+          <article class="card">
+            <img class="card__image" src="./images/Москва.jpg" alt="Москва" />
             <div class="card__figcaption">
-              <h2 class="card__title">Домбай</h2>
-              <button class="card__card-button"></button>
+              <h2 class="card__title">Москва</h2>
+              <button class="card__card-button card__card-button_active" type="button"></button>
             </div>
-          </div>
-          <div class="card">
-            <img class="card__image" src="./images/Эльбрус.png" alt="Эльбрус" />
+          </article>
+          <article class="card">
+            <img class="card__image" src="./images/Новосибирск.jpg" alt="Новосибирск" />
             <div class="card__figcaption">
-              <h2 class="card__title">Эльбрус</h2>
-              <button class="card__card-button"></button>
+              <h2 class="card__title">Новосибирск</h2>
+              <button class="card__card-button card__card-button_active" type="button"></button>
             </div>
-          </div>
-        </section>
-        <footer class="footer">
-          <p class="footer__signature">&#169;2022 Mesto Russia</p>
-        </footer>
-        <section class="popup">
-          <button class="popup__close"></button>
-          <form class="popup__container">
-            <div class="popup__form">
-              <h2 class="popup__title">Редактировать профиль</h2>
-              <input
-                class="field field_name"
-                type="text"
-                placeholder="Имя"
-                value="Жак-Ив Кусто"
-              />
-              <div class="line popup__line"></div>
-              <input
-                class="field field_description"
-                type="text"
-                placeholder="О себе"
-                value="Исследователь океана"
-              />
-              <div class="line popup__line"></div>
-              <button class="popup__save" type="submit">Сохранить</button>
-            </div>
-          </form>
+          </article>
         </section>
       </main>
-    </div>
-    <script src="./script.js"></script>
+      <section class="popup">
+        <button class="popup__close" type="button"></button>
+        <form class="popup__container">
+          <h2 class="popup__title">Редактировать профиль</h2>
+          <form class="popup__form">
+            <input
+              class="popup__field popup__field_value_name"
+              type="text"
+              placeholder="Имя"
+              value="Жак-Ив Кусто"
+              name="fieldName"
+            />
+            <input
+              class="popup__field popup__field_value_description"
+              type="text"
+              placeholder="О себе"
+              value="Исследователь океана"
+              name="fieldDescription"
+            />
+            <button class="popup__save" type="submit">Сохранить</button>
+          </form>
+        </form>
+      </section>
+      <footer class="footer">
+        <p class="footer__signature">&#169;2022 Mesto Russia</p>
+      </footer>
+    <script src="./scripts/script.js"></script>
   </body>
 </html>

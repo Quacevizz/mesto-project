@@ -6,11 +6,15 @@
   text-align: start;
   margin-bottom: 0;
   font-style: normal;
+  margin-left: 36px;
+  margin-top: 34px;
 }
 
 @media screen and (max-width: 1279px) {
   .popup__title {
     font-size: 18px;
     line-height: 22px;
+    margin-left: 22px;
+    margin-top: 26px;
   }
 }

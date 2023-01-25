@@ -2,13 +2,14 @@
   min-width: 32px;
   aspect-ratio: 1/1;
   position: relative;
-  top: -180px;
-  background-image: url(../../../images/Close\ Icon.png);
+  background-image: url(../../../images/Close_Icon.svg);
   background-position: center;
   background-color: transparent;
   border: none;
   opacity: 1;
   transition: opacity 1s ease;
+  bottom: 190px;
+  left: 8px;
 }
 
 .popup__close:hover {
@@ -17,10 +18,12 @@
 
 @media screen and (max-width: 1279px) {
   .popup__close {
-    min-width: 20px;
+    max-width: 20px;
     aspect-ratio: 1/1;
-    right: 20px;
-    bottom: 19px;
-    background-image: url(../../../images/Close\ Icon\ small.png);
+    position: absolute;
+    left: 275px;
+    bottom: 780px;
+    background-size: 62.5%;
+    background-repeat: no-repeat;
   }
 }

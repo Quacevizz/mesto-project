@@ -10,9 +10,9 @@
 
 @media screen and (max-width: 1279px) {
   .footer__signature {
-    margin: auto;
+    margin-left: 19px;
     margin-bottom: 36px;
-    max-width: 282px;
-    max-height: 14px;
+    font-size: 14px;
+    line-height: 17px;
   }
 }
