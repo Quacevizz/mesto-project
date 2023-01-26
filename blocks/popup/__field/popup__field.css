@@ -1,7 +1,5 @@
 .popup__field {
   border: none;
-  margin-top: 43px;
-  margin-left: 36px;
   box-sizing: border-box;
   min-width: 358px;
   min-height: 27px;
@@ -9,7 +7,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
-  border-bottom: 1px solid #545454;
+  border-bottom: 1px solid rgb(84,84,84,0.7);
 }
 
 .popup__field:last-of-type {
@@ -23,7 +21,5 @@
 @media screen and (max-width: 1279px) {
   .popup__field {
     min-width: 238px;
-    margin-top: 70px;
-    margin-left: 19px;
   }
 }

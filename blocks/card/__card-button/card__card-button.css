@@ -10,6 +10,7 @@
   border: none;
   opacity: 1;
   transition: opacity 1s ease;
+  cursor: pointer;
 }
 
 .card__card-button:hover {

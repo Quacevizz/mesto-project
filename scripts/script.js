@@ -1,7 +1,7 @@
 
 let editButton = document.querySelector(".profile__edit-button");
 let popupOpener = document.querySelector(".popup");
-let formElement = document.querySelector(".popup__container"); //Разобраться почему не работает с .popup__form
+let formElement = document.querySelector(".popup__form"); //работает
 let nameInput = document.querySelector(".popup__field_value_name");
 let jobInput = document.querySelector(".popup__field_value_description");
 let valueName = document.querySelector(".profile__title");
@@ -10,9 +10,9 @@ let popupButtonClose = document.querySelector(".popup__close");
 //открытие попапа
 function popupOpen() {
   popupOpener.classList.add("popup_opened");
-  valueName.textContent = nameInput.value;
+  nameInput.value = valueName.textContent;
 
-  valueJob.textContent = jobInput.value;
+  jobInput.value = valueJob.textContent;
 }
 // закрытие попапа
 function popupClose() {

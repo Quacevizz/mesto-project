@@ -8,8 +8,9 @@
   border: none;
   opacity: 1;
   transition: opacity 1s ease;
-  bottom: 190px;
-  left: 8px;
+  bottom: 40px;
+  left: 435px;
+  cursor: pointer;
 }
 
 .popup__close:hover {
@@ -19,10 +20,7 @@
 @media screen and (max-width: 1279px) {
   .popup__close {
     max-width: 20px;
-    aspect-ratio: 1/1;
-    position: absolute;
-    left: 275px;
-    bottom: 780px;
+    left: 255px;
     background-size: 62.5%;
     background-repeat: no-repeat;
   }

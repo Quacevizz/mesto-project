@@ -4,3 +4,9 @@
   flex-direction: row;
   width: 100%;
 }
+
+@media screen and (max-width: 1279px) {
+  .profile__wrap {
+    margin-left: 25px;
+  }
+}
