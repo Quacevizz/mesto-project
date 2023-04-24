@@ -9,6 +9,7 @@
   align-items: center;
   flex-direction: row-reverse;
   z-index: 2;
+  display: flex;
   visibility: hidden;
   opacity: 0;
   transition-delay: 0;
