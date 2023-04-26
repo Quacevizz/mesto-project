@@ -50,8 +50,6 @@ const initialCards = [
 //Открыть попапы
 function openPopup(popupElement) {
   popupElement.classList.add("popup_opened");
-  nameInput.value = valueName.textContent;
-  jobInput.value = valueJob.textContent;
 }
 
 //Закрыть попапы
@@ -68,8 +66,9 @@ function savePopupProfile(evt) {
   closePopup(popupProfile);
 }
 
-function addCard({ name, link }) {
+function addCard(name, link) {
   const cardElement = cardTemplate.querySelector(".card").cloneNode(true);
+
   cardElement.querySelector(".card__title").textContent = name;
   cardElement.querySelector(".card__image").src = link;
   cardElement.querySelector(".card__image").alt = name;
@@ -89,16 +88,23 @@ function addCard({ name, link }) {
       photoImg.src = link;
       photoFigcaption.textContent = name;
       photoImg.alt = name;
-      popupImg.classList.add("popup_opened");
+      openPopup(popupImg);
     });
-  cardSection.append(cardElement);
+
+return cardElement;
 }
 
-function renderCard() {
-  initialCards.forEach(addCard);
+function renderCard(initialCards) {
+
+  initialCards.forEach(function (item) {
+
+  cardSection.append(addCard(item.name, item.link));
+  });
 }
 
-renderCard();
+renderCard(initialCards);
+
+
 
 // Взаимодействие с карточками добавленными
 function createCard(name, link) {
@@ -120,7 +126,7 @@ function createCard(name, link) {
       photoImg.src = link;
       photoFigcaption.textContent = name;
       photoImg.alt = name;
-      popupImg.classList.add("popup_opened");
+      openPopup(popupImg);
     });
   newCardElement
     .querySelector(".card__delete-button")
